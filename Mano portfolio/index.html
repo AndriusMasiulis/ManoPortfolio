@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>I am Andrius</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>I am Andrius</title>
-</head>
-
-<body>
-  <main>
-    <div id="landing">
-      <div id="landing-text">
-        <div id="landing-text-inner">
-          <em>Hi everyone!</em>
-          <strong>My name is Andrius</strong>
-          <div class="btn onclick">
-            <button id="button">Contact me!</button>
+  <body>
+    <main>
+      <header id="headerContainer">
+        <div id="headerItems">
+          <a class="items" href="">Home</a>
+          <a class="items" href="">Work experience</a>
+          <a class="items" href="">Hobbies</a>
+          <a class="items" href="">Traveling</a>
+        </div>
+      </header>
+      <div id="landing">
+        <div id="landing-text">
+          <div id="landing-text-inner">
+            <em>Hi everyone!</em>
+            <strong>MY NAME IS ANDRIUS!</strong>
+            <div class="btn onclick">
+              <button id="button">Contact me!</button>
+            </div>
           </div>
         </div>
+        <div id="landing-image"></div>
       </div>
-      <div id="landing-image"></div>
-    </div>
 
-    <section id="about">
-      <div id="bodyOfTheWebpage">
-        <div id="aboutLeftSide">
-          About
+      <section id="about">
+        <div id="bodyOfTheWebpage">
+          <div id="aboutLeftSide">
+            <p>About the page</p>
+          </div>
+          <div id="aboutRightSide">
+            <p>
+              <strong>IDEA BEHIND THIS PAGE<br /><br /></strong> I have created
+              this webpage to introduce myself and to showcase my unsofisticated
+              (yet) webpage development skills! <br />
+              Please feel free to move around the page to get to know me better!
+            </p>
+            <br /><br />
+            <p></p>
+          </div>
         </div>
-        <div id="aboutRightSide">
-          <p>I have created this webpage to introduce myself and to showcase my unsofisticated (yet) webpage development
-            skills! <br> Please feel free to move around the page to get to know me better! </p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <h3>Get In Touch</h3>
+      <footer>
+        <h3>Get In Touch</h3>
 
-      <p>Email or call us to set up a consultation</p>
+        <p>Email or call us to set up a consultation</p>
 
-      <p>
-        "Email: "
-        <strong>contact@acmephotos.test</strong>
-      </p>
+        <p>
+          "Email: "
+          <strong>contact@acmephotos.test</strong>
+        </p>
 
-      <p>
-        "Phone: "
-        <strong>(617) 555-5555</strong>
-      </p>
-    </footer>
-</body>
-<script src="script.js"></script>
+        <p>
+          "Phone: "
+          <strong>(617) 555-5555</strong>
+        </p>
+      </footer>
+    </main>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </body>
+  <script src="script.js"></script>
 </html>

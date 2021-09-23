@@ -1,13 +1,41 @@
 html * {
   margin: 0;
+  text-decoration: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 
 body {
   background: #eee;
   font-family: "Roboto Condensed", sans-serif;
   height: auto;
+}
+
+#headerContainer {
+  position: fixed;
+  z-index: 30;
+  width: 1300px;
+  height: 50px;
+  background-color: rgba(136, 136, 136, 0.418);
+  border-radius: 4px;
+  display: flex;
+  transition: top 0.9s;
+}
+
+#headerItems {
+  align-self: center;
+  padding-left: 20px;
+}
+
+.items {
+  color: black;
+  margin-left: 50px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.items:hover {
+  background-color: rgba(128, 128, 128, 0.267);
 }
 
 main {
@@ -59,7 +87,7 @@ em {
 
 #landing-image {
   height: 100vh;
-  background: url(./DSC_5240.JPG);
+  background: url(./nuotraukos/DSC_5240.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,9 +96,7 @@ em {
 }
 
 /* 
-========================
-      BUTTON TWO
-========================
+Contact me BUTTON
 */
 
 #button {
@@ -86,6 +112,7 @@ em {
   text-shadow: 0;
   cursor: pointer;
   transition: all 0.25s ease;
+  margin-top: 40px;
 }
 
 #button:active {
@@ -106,6 +133,29 @@ em {
   to {
     transform: rotate(360deg);
   }
+}
+
+/*To top button*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(37, 6, 122, 0.514); /* Set a background color */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+#myBtn:hover {
+  background-color: rgba(85, 85, 85, 0.5);
+  transition: 0.5s;
 }
 
 #header {
@@ -190,13 +240,22 @@ footer h3 {
 }
 
 #aboutLeftSide {
-  background-color: rgba(0, 26, 56, 0.582);
+  background: rgb(175, 175, 176);
+  background: linear-gradient(
+    131deg,
+    rgba(175, 175, 176, 0.8323704481792717) 45%,
+    rgba(50, 50, 50, 1) 95%
+  );
   width: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
-  font-family: "Carattere", cursive;
-  font-size: 100px;
+  font-family: "Italianno", cursive;
+  font-size: 70px;
+}
+
+#aboutLeftSide p {
+  font-family: "Italianno", cursive;
 }
 
 #aboutRightSide {
@@ -204,7 +263,11 @@ footer h3 {
   width: 50%;
   align-items: center;
   justify-content: center;
-  font-family: "Carattere", cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   justify-self: center;
+}
+
+#aboutRightSide p {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 10px 30px 10px 30px;
 }
