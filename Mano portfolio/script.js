@@ -12,7 +12,7 @@ window.onscroll = function() {
 //To top button
 mybutton = document.getElementById("myBtn");
 
-window.onscroll = function() {scrollFunction()};
+document.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
