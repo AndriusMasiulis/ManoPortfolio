@@ -1,0 +1,210 @@
+html * {
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+
+body {
+  background: #eee;
+  font-family: "Roboto Condensed", sans-serif;
+  height: auto;
+}
+
+main {
+  max-width: 1300px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgb(0 0 0 / 10%), -30px 0px 40px rgb(0 0 0 / 10%);
+  display: block;
+}
+
+#landing {
+  display: flex;
+  height: 100%;
+  background: #fff;
+}
+
+#landing-text {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 50%;
+  padding: 0;
+}
+
+#landing-text h2 {
+  color: #888;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  display: block;
+  font-size: 19px;
+}
+
+#landing-text-inner {
+  display: block;
+  text-align: center;
+}
+
+em {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#landing-image {
+  height: 100vh;
+  background: url(./DSC_5240.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 50%;
+}
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+
+#button {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid green;
+  color: green;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#button:active {
+  letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+#button:hover {
+  color: white;
+  background: rgba(0, 128, 0, 0.349);
+  animation: rotating 6s 0.25s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  display: block;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+strong {
+  display: flex;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 50px;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 1.17em;
+  font-weight: lighter;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+#images p {
+  font-size: 16px;
+}
+
+#about {
+  height: 100vh;
+}
+
+#bodyOfTheWebpage {
+  display: flex;
+  height: 100vh;
+}
+
+#aboutLeftSide {
+  background-color: rgba(0, 26, 56, 0.582);
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Carattere", cursive;
+  font-size: 100px;
+}
+
+#aboutRightSide {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Carattere", cursive;
+  font-size: 2em;
+  justify-self: center;
+}
