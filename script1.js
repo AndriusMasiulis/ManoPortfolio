@@ -39,14 +39,14 @@ icon.onclick = function(){
   document.body.classList.toggle("dark-theme");
   if(document.body.classList.contains("dark-theme"))
   {
-    icon.src = "../nuotraukos/sun.png"
-    linkedIn.src = "../nuotraukos/linkedin.png"
-    facebook.src = "../nuotraukos/facebook.png"
-    instagram.src = "../nuotraukos/instagram.png"
+    icon.src = "./nuotraukos/sun.png"
+    linkedIn.src = "./nuotraukos/linkedin.png"
+    facebook.src = "./nuotraukos/facebook.png"
+    instagram.src = "./nuotraukos/instagram.png"
   }
   else
   {
-    icon.src = "../nuotraukos/moon.png"
+    icon.src = "./nuotraukos/moon.png"
     linkedIn.src = "https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-512.png"
     facebook.src = "https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Facebook_svg-512.png"
     instagram.src = "https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png"
