@@ -4,19 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style1.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../style1.css" />
     <title>Hello!</title>
   </head>
 
@@ -24,13 +12,12 @@
     <main>
       <header id="headerContainer">
         <div id="headerItems">
-          <img src="./nuotraukos/moon.png" class="items" id="icon" alt="" />
+          <img src="../nuotraukos/moon.png" class="items" id="icon" alt="" />
           <a class="items" href="index.html">Home</a>
           <a class="items" href="WorkExperience.html">Work experience</a>
           <a class="items" href="hobbies.html">Hobbies</a>
           <a class="items" href="travels.html">Travels</a>
         </div>
-        <div class="tusciaVieta"></div>
       </header>
       <div id="landing">
         <div id="landing-text">
@@ -38,12 +25,7 @@
             <em>Hi everyone!</em>
             <strong>MY NAME IS ANDRIUS!</strong>
             <div class="btn onclick">
-              <button
-                id="button"
-                onclick="document.location.href='#footerLeft'"
-              >
-                Contact me!
-              </button>
+              <a href="#footerLeft"><button id="button">Contact me!</button></a>
             </div>
           </div>
         </div>
@@ -53,29 +35,11 @@
       <section id="about">
         <div id="bodyOfTheWebpage">
           <div id="aboutLeftSide">
-            <div class="card">
-              <div class="front">
-                <img
-                  height="100px"
-                  width="90px"
-                  src="./nuotraukos/Andrius Masiulis.jpg"
-                />
-                <div class="cube"></div>
-              </div>
-              <div class="back">
-                <div class="details">
-                  <h2>
-                    You have found it!<br /><br /><button
-                      onclick="location.href='https://www.15min.lt/'"
-                      class="secretBtn"
-                    >
-                      Click me!
-                    </button>
-                  </h2>
-                  <div class="social-icons"></div>
-                </div>
-              </div>
-            </div>
+            <img
+              src="./nuotraukos/Andrius Masiulis.jpg"
+              id="manoNuotrauka"
+              alt=""
+            />
             <p>About the <br />page</p>
           </div>
           <div id="aboutRightSide">
@@ -135,5 +99,5 @@
     </main>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   </body>
-  <script src="script1.js"></script>
+  <script src="../script1.js"></script>
 </html>

@@ -1,7 +1,6 @@
 html * {
   margin: 0;
   text-decoration: none;
-  font-family: "Birthstone", cursive;
 }
 
 :root {
@@ -21,33 +20,24 @@ body {
   height: auto;
 }
 
-#headerContainer {
+#navBar {
   position: fixed;
   z-index: 30;
   width: 1100px;
   height: 50px;
   background-color: rgba(136, 136, 136, 0.418);
+  border-radius: 4px;
   display: flex;
   transition: top 0.9s;
   flex-direction: row;
 }
 
-#headerItems {
+#navBarItems {
   align-self: center;
   padding-left: 20px;
   flex-direction: row;
   display: flex;
   align-items: center;
-  font-family: "Roboto Slab", serif;
-}
-
-#headerItems a {
-  font-family: "Roboto Slab", serif;
-}
-
-.tusciaVieta {
-  display: flex;
-  width: 50%;
 }
 
 #icon {
@@ -135,7 +125,6 @@ Contact me BUTTON
   cursor: pointer;
   transition: all 0.25s ease;
   margin-top: 40px;
-  font-family: "Roboto Slab", serif;
 }
 
 #button:active {
@@ -197,12 +186,10 @@ Contact me BUTTON
   padding-left: 1rem;
 }
 
-/* About dalis */
-
 #aboutRightSide strong {
   display: flex;
-  font-weight: 800;
-  font-size: 2.5em;
+  font-weight: 400;
+  font-size: 2.5rem;
   text-transform: capitalize;
   margin: 0;
   font-size: 50px;
@@ -254,6 +241,16 @@ h3 {
   height: 100vh;
 }
 
+#manoNuotrauka {
+  clip-path: polygon(7% 26%, 50% 0, 93% 24%, 93% 75%, 50% 100%, 7% 75%);
+  z-index: 200;
+  position: absolute;
+  width: 7vmax;
+  height: 7vmax;
+  top: 10vmax;
+  right: -3.5vmax;
+}
+
 #aboutLeftSide {
   background: rgb(175, 175, 176);
   background: linear-gradient(
@@ -266,8 +263,13 @@ h3 {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  font-size: 6rem;
+  font-family: "Italianno", cursive;
+  font-size: 70px;
   position: relative;
+}
+
+#aboutLeftSide p {
+  /* font-family: "Italianno", cursive; */
 }
 
 #aboutRightSide {
@@ -282,6 +284,7 @@ h3 {
 }
 
 #aboutRightSide p {
+  font-family: "Roboto Condensed", sans-serif;
   display: flex;
   flex-wrap: wrap;
   margin-left: 80px;
@@ -375,88 +378,4 @@ footer h3 {
 #instagramLogo:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Flipping card */
-
-.cube {
-  width: 80px;
-  height: 100px;
-  clip-path: polygon(7% 26%, 50% 0, 93% 24%, 93% 75%, 50% 100%, 7% 75%);
-}
-
-.card {
-  position: absolute;
-  top: 30%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  transform-style: preserve-3d;
-  perspective: 600px;
-  transition: 0.5s;
-  clip-path: polygon(7% 26%, 50% 0, 93% 24%, 93% 75%, 50% 100%, 7% 75%);
-}
-
-.card .front {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
-}
-
-.card:hover .front {
-  transform: rotateX(-180deg);
-}
-
-.card .back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(71, 32, 32);
-  backface-visibility: hidden;
-  transform: rotateX(180deg);
-  transition: 0.5s;
-}
-
-.card:hover .back {
-  transform: rotateX(0deg);
-}
-
-.card .back .details {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 5px;
-  box-sizing: border-box;
-}
-
-.card .back .details h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 9px;
-  font-family: "Roboto Slab", serif;
-}
-
-.secretBtn {
-  border-radius: 15px;
-  background-color: transparent;
-  border: 3px solid green;
-  font-size: 10px;
-  cursor: pointer;
-  font-family: "Roboto Slab", serif;
-}
-
-.secretBtn:hover {
-  background-color: rgba(2, 68, 2, 0.226);
 }
